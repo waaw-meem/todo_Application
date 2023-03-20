@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    color: #3cb376;
+    font-size: 3rem;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.input-container {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 20px;
+    position: relative;
+}
+
+label {
+    display: block;
+    margin-bottom: 15px;
+    font-family: sans-serif;
+    text-align: left;
+    padding-top: 15px;
+}
+
+input#user_list {
+    padding: 15px;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #3cb376;
+    margin-bottom: 15px;
+}
+
+.input:focus{
+    outline: none !important;
+}
+
+input[type="checkbox"] {
+    padding: 10px;
+    box-shadow: 0 0 10px #0003;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+button#submit_btn {
+    padding: 8px;
+    width: 100%;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    background: #3cb376;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 10px #0002;
+    color: #fff;
+}
+
+.input-container::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -30px;
+    border-bottom: 4px solid #c4c4c4;
+    width: 100%;
+}
+
+div#list-container {
+    width: 500px;
+    margin: 50px auto 0 auto;
+}
+
+.item {
+    padding: 15px;
+    box-shadow: 0 0 10px #0002;
+    border-radius: 2px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li{
+    display: flex;
+    flex-direction: row;
+    grid-gap: 30px;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 15px;
+}
+
+.removebtn{
+    padding: 8px 16px;
+    background-color: rgb(255, 195, 195);
+    color: #fff;
+    font-weight: 600;
+    font-size:16px;
+    flex: 0 0 20%;
+    pointer-events: none;
+
+}
+
+.removebtn.active {
+    pointer-events: all;
+    background-color: crimson;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    flex: 0 0 20%;
+    padding: 8px 16px;
+    pointer-events: all;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #0002;
+}
+
+.itemName {
+    flex: 1;
+    font-family: sans-serif;
+}
